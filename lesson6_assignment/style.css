@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* Anthony Threlfall - March 21, 2019  */
+
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	line-height: 1.8em;
+	color: #000;
+	background-color: #9CC1C0;
+	padding: 0 10px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #111;
+}
+h1 {
+	font-size: 30px;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 1em;
+}
+h2 {
+	font-size: 24px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+	background-color: #0034C4;
+}
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 2px;
+	border-bottom-style: inset;
+	border-bottom-color: #869E9D;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+
+a:link {
+	font-weight: bold;
+	color: #003472;
+}
+a:visited {
+	font-weight: bold;
+	color: #045596;
+	text-decoration: none;
+}
+a:hover {
+	color: #045596;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	margin-left: 12px;
+}
+
+ol {
+	margin-left: 12px;
+}
+
+/* table styles -------------------------------------- */
+
+table {
+	border: solid #003472 3px;
+}
+td {
+	
+	padding: 6px;
+	border: solid #003472 1px;
+}
+
+th {
+	font-weight: bold;
+	background-color: #003472;
+	text-align: center;
+	padding: 6px;
+	border: solid #003472 1px;
+}
+
+/* border styles ------------------------------------ */
+
+hr {
+	border: solid #869E9D 2px;
+}
+
+img {
+	border: ridge #869E9D 2px;
+
+}
+iframe {
+	border: double #869E9D 6px;
+	padding: 8px;
+	margin: 8px;
+}

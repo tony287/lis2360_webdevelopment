@@ -1,199 +1,180 @@
-@charset "UTF-8";
-/* Anthony Threlfall - April, 8 2019 */
 
-
-body {
-	padding: 0;
-	margin: 0;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 18px;
-	line-height: 1.8em;
-	color: #000;
-	background-color: #9CC1C0;
-	padding: 0 10px;
+body{
+        padding: 0;
+        margin: 0;
 }
 
-/* basic text styles ----------------------------  */
-p, li, td {
-	letter-spacing: 0.1em;
-	color: #111;
-	padding: 0 60px;
-}
-h1 {
-	font-size: 30px;
-	font-variant: small-caps;
-	letter-spacing: .5em;
-	line-height: 1em;
-	padding: 0 60px;
-	margin: 0;
-}
-h2 {
-	font-size: 24px;
-	padding: 0 60px;
-	font-variant: small-caps;
-	letter-spacing: 0.5em;
-	background-color: #0034C4;
-	margin: 0;
-}
-h3 {
-	font-size: 17px;
-	letter-spacing: 0.5em;
-	border-bottom-width: 2px;
-	border-bottom-style: inset;
-	border-bottom-color: #869E9D;
-	padding: 0 60px;
-	font-variant: small-caps;
-	font-style: italic;
+#splash{
+        background: url(images/ai-codes-coding-2-97077.jpg) no-repeat center top fixed;
+        height: 800px;
+        background-size: cover;
 }
 
-/* link styles ---------------------------- */
-
-a:link {
-	font-weight: bold;
-	color: #003472;
+#overview{
+        background-color: #B1B0B2;
+        padding: 40px 0 60px 0;
 }
-a:visited {
-	font-weight: bold;
-	color: #045596;
+
+#overview h2{
+        font-size: 30px;
+        text-align: center;
+        margin: 15px 0 10px 0;
+}
+#overview p{
+        margin: 0;
+        font-family:"Times New Roman", Times, serif;
+        padding: 0;
+        font-size: 17px;
+        line-height: 1.6em;
+        color: #000
+}
+
+#video{
+        background: url(images/abstract-access-close-up-1089438.jpg) no-repeat center top fixed; ;
+        font-size: 20px;
+        background-size: cover;
+        color: #fff;
+        padding: 40px 0 60px 0;
+}
+#video h2{
+        margin-bottom: 0;
+        
+}
+
+#video iframe{
+        border: double 2px;
+        margin: 25px 10px;
+        padding: 1px;
+}
+
+#Resources{
+        background-color: #D9E1F3;
+        padding: 40px 0 60px 0;
+}
+#Resources h3{
+        font-size: 30px;
+}
+
+#footer{
+        background-color: #0F0F0E;
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.half_container { /* provides a two column presentation */
+  width: 47%;
+  float: left;
+  overflow: hidden;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+/* ----------------- NAVIGATION BAR STYLES -------------------*/
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 54px;
+	background-color: rgba(255, 255, 255, 0.8); 
+}
+
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+}
+
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+}
+
+ul#menu li a.button {
+	font-size: 16px;
 	text-decoration: none;
-}
-a:hover {
-	color: #045596;
+	/* this padding defines the size of the buttons */
+	padding: 20px 100px 20px 100px; 
 }
 
-/* list styles ----------------------------- */
-ul li {
-	margin-left: 60px;
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(103, 33, 183, 0.1);
+}
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 100px; /* provides a lot of space above title to view the background image */
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-family: Domine, sans-serif; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 105px; 	
+  text-shadow: 4px 4px #000; /* Shadow helps text to stand out from background */
+}
+#title-page h3 {
+  font-size: 1.6em;
+  font-family: Pattaya;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #500;
 }
 
 ol {
-	margin-left: 80px;
+	margin-left: 50px;
 }
 
 ol li {
 	padding-left: 0;
+        margin-bottom: 10px;
+}
+                        /*        link styles     */
+a:link {
+	color: #306CD3;
+}
+a:visited {
+	color: #306CD3;
+}
+a:hover {
+	color: #4B53C6;
+	text-decoration: none;
 }
 
-/* table styles -------------------------------------- */
+/* ------------------- FOOTER CREDITS --------------------- */
 
-table {
-	margin: 60px;
-	border: solid #003472 3px;
+#credits {
+  text-align: center;
+  color: #fff;
 }
-td {
-	
-	padding: 6px;
-	border: solid #003472 1px;
+#credits table{      
+  margin: 0 auto;
+  border: solid #fff;
+  
 }
-
-th {
-	font-weight: bold;
-	background-color: #003472;
-	text-align: center;
-	padding: 6px;
-	border: solid #003472 1px;
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
 }
 
-/* border styles ------------------------------------ */
-
-hr {
-	border: solid #869E9D 2px;
+                /*                  floats             */
+.fltright{
+	float:right;
+	margin: 20px;
+        width: 450px;
 }
 
-img {
-	border: ridge #869E9D 2px;
-
-}
-iframe {
-	border: double #869E9D 6px;
-	padding: 8px;
-	margin: 8px;
-}
-
-/* Div style for page layout */
-
-#container
-{
-	width:950px;
-	margin: 0 auto;
-	background-color: #fff;
-	overflow: hidden;	
-}
-
-#header
-{
-	width:100%;
-	background-color: #eee;
-	padding: 0 0 30px 0;
-	
-}
-
-#content
-{
-	width:100%;
-	padding-bottom: 40px;
-	clear: both;
-}
-
-#content img
-{
-	margin: 0 60px;
-}
-
-#contentsidebar /* content layout in the author section*/
-{
-	width:600px;
-	float: left;
-	padding-bottom: 40px;
-}
-#footer
-{
-	border-top: 2px solid #869E9D;
-	width:100%;
-	background-color: #eee;
-	padding: 30px 0;
-	clear: both;
-}
-
-#footer p
-{
-	margin: 0;
-}
-
-#footer table
-{
-	margin: 0 60px;
-}
-
-#sidebar /*for the sidebar in overview*/
-{
-	width: 300px;
-	float: right;
-	margin: 0 20px 0 0;
-}
-
-
-#sidebar p
-{
-	padding: 5px;
-	border: double 2px #869E9D;
-	box-shadow: 10px 10px 5px #999;
-	border-radius: 10px;
-	background-color: #eee;
-}
-
-#sidebar1 /* for the sidebar in Author*/
-{
-	width: 300px;
-	float: right;
-	margin: 50px 40px 0 0;
-}
-
-#sidebar1 p
-{
-	padding: 5px;
-	border: double 2px #869E9D;
-	box-shadow: 10px 10px 5px #999;
-	border-radius: 10px;
-	background-color: #eee;
+.fltleft{
+	float:left;
+	margin: 20px 50px 20px 0;
+        width: 450px;
 }
